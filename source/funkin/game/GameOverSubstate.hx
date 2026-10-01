@@ -150,6 +150,8 @@ class GameOverSubstate extends MusicBeatSubstate
 			FlxG.sound.music.stop();
     	}
 
+		FlxG.sound.music = null;
+
 		character.playAnim("deathConfirm", true);
 
     	var sound:FlxSound = FlxG.sound.play(Paths.sound(retrySFX));
